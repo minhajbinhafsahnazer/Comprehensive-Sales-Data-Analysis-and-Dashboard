@@ -5,11 +5,10 @@ library(dplyr)
 library(ggplot2)
 library(ggrepel)
 library(DT)
-library(sf)
+library(sf)  # Use sf instead of rgdal
 library(rvest)
 library(viridis)
 library(ggthemes)
-library(rgdal)
 library(countrycode)
 library(rnaturalearthdata)
 library(rnaturalearth)
@@ -119,8 +118,6 @@ server <- function(input, output) {
     }
   })
   
-  
-  
   output$map <- renderPlot({
     fac <- input$mvar
     Country_GP <- summarise(group_by(crctd_data, Country_name), factor = sum(!!sym(fac)))
@@ -136,8 +133,11 @@ server <- function(input, output) {
                                       "São Tomé & Príncipe" = "Sao Tome and Principe",
                                       "Trinidad & Tobago" = "Trinidad and Tobago")
     Country_GP$Country_name <- countrycode(Country_GP$Country_name, "country.name", "country.name")
+    
+    # Use sf to read countries and merge
     world <- ne_countries(scale = "medium", returnclass = "sf")
     world <- left_join(world, Country_GP, by = c("name" = "Country_name"))
+    
     ggplot(data = world) +
       geom_sf(aes(fill = factor)) +
       scale_fill_continuous(name = paste(fac), low = "pink", high = "darkblue", na.value = "lightgrey") +
@@ -195,35 +195,5 @@ server <- function(input, output) {
       geom_text(aes(label = paste0(round(Production/sum(Production)*100,2), "%")),
                 position = position_stack(vjust = 0.5),
                 color = "black", size = 4) +
-      scale_fill_manual(values = c('#FBF8CC', '#FFCFD2', '#B9FBC0','#957DAD','#B7D3DF','#DEAAAD'))
-  })
+      scale_fill_manual(values = c('#FBF8CC', '#FFCFD2', '#B9FBC0', '#957DAD', '#B7D3DF', '#DEAAAD'))
   
-  output$line <- renderPlot({
-    continent <- input$lvar
-    GPnew <- crctd_data[crctd_data$Continent == continent,]
-    agg_data <- GPnew %>% 
-      filter(Grain_name %in% c("Corn","Wheat","Rice")) %>%
-      group_by(Year_of_production, Grain_name) %>%
-      summarise(Total_production = sum(Total_production)) %>%
-      ungroup()
-    ggplot(agg_data, aes(x = Year_of_production, y = Total_production, color = Grain_name)) +
-      geom_line() +
-      geom_point() +
-      labs(title = paste("Production of Major Grains over Years in", continent),
-           x = "Year of Production",
-           y = "Total Production") +
-      theme_minimal()
-  })
-  
-  output$tablehead <- renderTable({
-    head(crctd_data)
-  })
-  
-  output$tableselect <- renderTable({
-    selvars <- input$selvars
-    selrows <- eval(parse(text = input$selrows))
-    crctd_data[selrows, selvars, drop = FALSE]
-  })
-}
-
-shinyApp(ui, server)
