@@ -1,51 +1,61 @@
-# 📊 Comprehensive Sales Data Analysis and Dashboard
+# 🌿 Plant Pot
 
-Objective: Build an end-to-end sales data dashboard that integrates data from multiple sources to provide insights on sell-in and sell-out metrics, customer behavior, and sales performance trends.
-
----
-
- 📋 Project Scope
-
-- Data Cleaning and Preparation: Process and standardize sales data from various sources (e.g., Excel, SQL databases) to ensure accuracy and consistency.
-- Exploratory Data Analysis (EDA): Perform EDA to uncover patterns and identify key metrics for reporting to cross-functional stakeholders.
-- Dashboard Creation: Design and build an interactive dashboard in Power BI or Tableau to visualize key insights, including:
-  - Top-selling products
-  - Customer behavior trends
-  - Regional sales performance
+**Plant Pot** is a dedicated e-commerce platform designed to bring style, creativity, and beauty into your space. With a vast collection of interior decor, designer furniture, artistic pieces, and more, **Plant Pot** makes it easy to transform any space into a personalized, stunning environment.
 
 ---
 
- 🧑‍💼 Skills Demonstrated
+## 🌟 Features
 
-- Data Cleaning and Preparation: Using Python and Excel for data preprocessing and transformation.
-- Exploratory Data Analysis (EDA): Leveraging Python for in-depth data analysis and insights discovery.
-- Data Visualization: Creating clear, interactive dashboards to communicate insights.
-- Cross-Functional Reporting: Presenting metrics to stakeholders across different functions.
-- Stakeholder Communication: Effectively sharing insights and making data-driven recommendations.
-
----
-
-# 🛠️ Tools Used
-
-- SQL: For querying and managing data in relational databases.
-- Power BI or Tableau: For building interactive dashboards.
-- Python: Used for data cleaning, preparation, and exploratory analysis.
-- Excel: Initial data processing and handling.
+- **Extensive Collection**: Unique, high-quality decor items and furniture for every style.  
+- **Cultural Goods**: Discover decor and art that celebrate diverse cultures and traditions.  
+- **Curated Artistries**: Choose from art pieces crafted by talented artists.  
+- **User-Friendly Interface**: Seamless shopping experience with intuitive navigation.  
+- **Easy Checkout**: Fast, secure payment options for hassle-free shopping.  
+- **Personalized Recommendations**: Suggestions tailored to your taste and past purchases.  
+- **Try Before You Buy (AR Technology)**:  
+  - Visualize products in your space using Augmented Reality.  
+  - **Why it works**: See it, love it, buy it.
 
 ---
 
- 🚀 Getting Started
+## 🌍 Sustainability at Plant Pot
+
+- **Eco-Friendly and Sustainable Products**:  
+  - Partner with artisans and brands that use recycled materials.  
+  - Highlight a **“Green Collection”** with certifications and stories about the artisans.  
+
+- **Sustainable Fashion and Decor**:  
+  - Promote decor and furniture that align with eco-conscious values.  
+
+- **Recycled Products**:  
+  - Showcase items created from upcycled and recycled materials.  
+
+- **Why it works**:  
+  - Solves the pain point for eco-conscious shoppers seeking sustainable options.  
+  - Builds an emotional connection by supporting the planet and local artisans.  
+
+- **Marketing Tip**: _"Decorate Your Home, Save the Planet."_  
+
+---
+
+## 🚀 Added Convenience
+
+- Solves the pain point of finding unique, sustainable decor in one place.  
+- Offers personalized interior design services to streamline your shopping experience.  
+- **AR** technology enables you to make confident purchasing decisions.  
+
+---
+
+## 🚀 Getting Started
 
 ### Prerequisites
+- [Node.js](https://nodejs.org)  
+- [Git](https://git-scm.com)  
+- A modern browser (e.g., Chrome, Firefox, Safari)
 
-- Python (with libraries: Pandas, NumPy, Matplotlib, Seaborn)
-- Power BI or Tableau (for dashboard creation)
-- SQL Database (optional, if data is stored in a database)
-- Excel
+### Installation
 
- Installation
-
-1. Clone the Repository
+1. **Clone the Repository**:  
    ```bash
-   git clone https://github.com/yourusername/sales-data-analysis-dashboard.git
-   cd sales-data-analysis-dashboard
+   git clone https://github.com/yourusername/plant-pot.git
+   cd plant-pot
