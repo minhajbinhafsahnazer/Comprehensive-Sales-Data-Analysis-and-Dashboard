@@ -1,4 +1,4 @@
-# Comprehensive Sales Data Analysis and Dashboard 📊💼
+## Comprehensive Sales Data Analysis and Dashboard 📊
 
 ## Objective 🎯
 The goal of this project is to build an end-to-end sales data dashboard that integrates data from multiple sources to provide insights on sell-in and sell-out metrics, customer behavior, and sales performance trends.
