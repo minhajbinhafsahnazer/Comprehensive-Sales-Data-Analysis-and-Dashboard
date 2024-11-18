@@ -1,7 +1,16 @@
-## Comprehensive Sales Data Analysis and Dashboard 📊
+# Comprehensive Sales Data Analysis and Dashboard 📊
 
 ## Objective 🎯
 The goal of this project is to build an end-to-end sales data dashboard that integrates data from multiple sources to provide insights on sell-in and sell-out metrics, customer behavior, and sales performance trends.
+
+## Data Used 📦
+This project leverages sales data from **Amazon Sales Data 2023**, covering the following categories:  
+- **Beauty and Grooming**  
+- **Furniture Sales**  
+- **Health and Personal Care**  
+- **Home Decor**  
+
+The data includes product details, pricing, ratings, discounts, and customer behavior metrics, offering a rich foundation for analysis and actionable insights.
 
 ## Scope 🔍
 - **Data Cleaning & Preparation** 🧹: The sales data is sourced from multiple locations (e.g., Excel, SQL databases). Initial cleaning and preparation are performed to ensure data integrity.
