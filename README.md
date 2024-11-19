@@ -39,4 +39,4 @@ This project is ideal for gaining hands-on experience in business intelligence a
 - Business Intelligence Analyst 📈
 - Data Engineer 🛠️
 
-By building this comprehensive dashboard, the project provides actionable insights and fosters data-driven decision-making for businesses. 🚀
+ the project provides actionable insights and fosters data-driven decision-making for businesses. 🚀
